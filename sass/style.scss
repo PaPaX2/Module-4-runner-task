@@ -1,0 +1,99 @@
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+
+}
+
+.landing-page {
+    background-image: url('https://i.ibb.co/ygBjZyC/fashion-2208045-1920.jpg');
+    height: 700px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+
+}
+.brand-logo {
+    justify-content: flex-start;
+    color: goldenrod;
+    font-size: 2.5em;
+    font-style: italic;
+    font-weight: 700;
+
+}
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 0;
+}
+.main-menu {
+    width: 100%;
+    font-size: 1.5em;
+    margin: 25px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.menu-item {
+    margin-left: 5%;
+        }
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.landing-page-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    margin: auto;
+    color: white;
+    line-height: 1.6;
+    }
+
+.site-subtitle {
+    font-size: 4em;
+    font-style: italic;
+    margin: 0;
+    padding-top: 90px;
+}
+
+.site-title {
+    font-size: 7em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.btn {
+    width: 240px;
+    margin:24px auto 0 auto;
+    padding: 18px;
+    background-color: gold;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: 700;
+}
