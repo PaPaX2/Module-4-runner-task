@@ -4,28 +4,18 @@ body {
     font-size: 10px;
 }
 
-.container {
-    max-width: 980px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
-
-}
 
 .landing-page {
     background-image: url('https://i.ibb.co/ygBjZyC/fashion-2208045-1920.jpg');
     height: 700px;
-    position: relative;
     background-position: center center;
     background-size: cover;
-    display: flex;
-}
+   }
 
 .navigation {
     display: flex;
-    flex-direction: row;
-
 }
+
 .brand-logo {
     justify-content: flex-start;
     color: goldenrod;
@@ -42,6 +32,9 @@ body {
     margin: 0 auto;
     padding: 0;
 }
+
+
+
 .main-menu {
     width: 100%;
     font-size: 1.5em;
@@ -52,7 +45,7 @@ body {
 
 .menu-item {
     margin-left: 5%;
-        }
+}
 
 .menu-item a {
     text-decoration: none;
@@ -70,14 +63,14 @@ body {
     line-height: 1.6;
     }
 
-.site-subtitle {
+.landing-page-inner h2 {
     font-size: 4em;
     font-style: italic;
     margin: 0;
     padding-top: 90px;
 }
 
-.site-title {
+.landing-page-inner h1 {
     font-size: 7em;
     font-weight: 700;
     margin: 0;
@@ -96,4 +89,50 @@ body {
     display: inline-block;
     font-size: 1.8em;
     font-weight: 700;
+}
+
+.section-title {
+    padding: 60px 40px 40px 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 3.9em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.section-title p {
+    font-size: 1.9em;
+    font-style: italic;
+    color: grey;
+}
+
+.services i {
+    font-size: 40px;
+    width: 75px;
+    height: 75px;
+    border-style: solid;
+    border-radius: 50%;
+    color: goldenrod;
+    margin: 0 auto;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+.card-body p {
+    color: grey;
+    font-style: italic;
+    font-size: 1.2em;
+}
+.card {
+    justify-content: space-between;
 }
