@@ -156,6 +156,10 @@ body {
 }
 
 /* Portfolio */
+.portfolio .container {
+  padding-bottom: 50px;
+}
+
 .portfolio {
   background-color: #ecf0f1;
   display: -ms-flexbox;
@@ -169,5 +173,49 @@ body {
       justify-items: center;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* social */
+footer .container {
+  height: 80px;
+}
+
+.copyright {
+  font-size: 1.5em;
+  position: relative;
+}
+
+.social {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  line-height: 45px;
+}
+
+.social-icon {
+  text-decoration: none;
+  list-style-type: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  padding: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  width: 100%;
+  position: absolute;
+}
+
+.social-icon i {
+  font-size: 20px;
+  border: solid;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
