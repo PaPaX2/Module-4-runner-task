@@ -22,11 +22,16 @@ body {
 .brand-logo {
   -ms-flex-pack: start;
       justify-content: flex-start;
-  color: goldenrod;
   font-size: 2.5em;
   font-style: italic;
   font-weight: 700;
   margin: 0;
+  cursor: pointer;
+}
+
+.brand-logo a {
+  text-decoration: none;
+  color: goldenrod;
 }
 
 .navigation ul {
@@ -217,5 +222,19 @@ footer .container {
   height: 50px;
   line-height: 45px;
   text-align: center;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .navigation ul {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+  }
+  .btn {
+    position: absolute;
+    bottom: -150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
