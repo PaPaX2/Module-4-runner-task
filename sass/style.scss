@@ -9,24 +9,27 @@ body {
     background-position: center center;
     background-size: cover;
     min-height: 700px;
-    padding: 40px 120px;
+    padding: 10px;
 }
 
 .navigation {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     margin: 0;
-    padding: 0 60px;
+    padding: 30px 60px;
 }
 
 .brand-logo {
     justify-content: flex-start;
-    font-size: 2.5em;
+    font-size: 2em;
     font-style: italic;
     font-weight: 700;
     margin: 0;
     cursor: pointer;
 }
-.brand-logo a{
+
+.brand-logo a {
     text-decoration: none;
     color: goldenrod;
 }
@@ -55,6 +58,9 @@ body {
 .menu-item a {
     text-decoration: none;
     color: white;
+}
+.menu-item-big {
+    flex-grow: 3;
 }
 
 .landing-page-inner {
@@ -175,12 +181,15 @@ footer .container {
 .copyright {
    font-size: 1.5em;
    position: relative;
+   display: flex;
+   justify-content: center;
 }
 
 .social {
     display: flex;
     flex-wrap: wrap;
     line-height: 45px;
+    width: 100%;
 }
 .social-icon {
     text-decoration: none;
@@ -189,8 +198,7 @@ footer .container {
     flex-direction: row;
     padding: 0;
     justify-content: center;
-    width: 100%;
-    position : absolute;    
+    width: 100%;  
 }
 
 .social-icon i {
@@ -206,7 +214,7 @@ footer .container {
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .navigation ul {
         flex-direction: column;
         justify-content: flex-start;
@@ -215,4 +223,10 @@ footer .container {
         position: absolute;
         bottom: -150px;
    }
+}
+
+@media (max-width: 758px) {
+    .social {
+        flex-direction: column-reverse;
+    }
 }

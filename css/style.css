@@ -9,20 +9,24 @@ body {
   background-position: center center;
   background-size: cover;
   min-height: 700px;
-  padding: 40px 120px;
+  padding: 10px;
 }
 
 .navigation {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
   margin: 0;
-  padding: 0 60px;
+  padding: 30px 60px;
 }
 
 .brand-logo {
   -ms-flex-pack: start;
       justify-content: flex-start;
-  font-size: 2.5em;
+  font-size: 2em;
   font-style: italic;
   font-weight: 700;
   margin: 0;
@@ -62,6 +66,11 @@ body {
 .menu-item a {
   text-decoration: none;
   color: white;
+}
+
+.menu-item-big {
+  -ms-flex-positive: 3;
+      flex-grow: 3;
 }
 
 .landing-page-inner {
@@ -188,6 +197,10 @@ footer .container {
 .copyright {
   font-size: 1.5em;
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .social {
@@ -196,6 +209,7 @@ footer .container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   line-height: 45px;
+  width: 100%;
 }
 
 .social-icon {
@@ -209,7 +223,6 @@ footer .container {
   -ms-flex-pack: center;
       justify-content: center;
   width: 100%;
-  position: absolute;
 }
 
 .social-icon i {
@@ -225,7 +238,7 @@ footer .container {
   cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .navigation ul {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -235,6 +248,13 @@ footer .container {
   .btn {
     position: absolute;
     bottom: -150px;
+  }
+}
+
+@media (max-width: 758px) {
+  .social {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */
